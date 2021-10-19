@@ -30,7 +30,7 @@ kernelspec:
 ```{literalinclude} ../_static/colab_light.raw
 ```
 
-## pandas
+## Pandas
 
 This lecture begins the material on `pandas`.
 
@@ -60,7 +60,7 @@ The first main pandas type we will introduce is called Series.
 A Series is a single column of data, with row labels for each
 observation.
 
-pandas refers to the row labels as the *index* of the Series.
+Pandas refers to the row labels as the *index* of the Series.
 
 ```{figure} ../_static/PandasSeries.png
 :alt: PandasSeries.png
@@ -90,14 +90,14 @@ unemp.index
 unemp.values
 ```
 
-### What Can We Do with a Series object?
+### What Can We Do with a Series Object?
 
 #### `.head` and `.tail`
 
 Often, our data will have many rows, and we won't want to display it all
 at once.
 
-The methods `.head` and `.tail` show rows at the beginning and end
+The methods `.head` and `.tail` show 5 rows at the beginning and end
 of our Series, respectively.
 
 ```{code-cell} python
@@ -134,7 +134,7 @@ unemp.unique()
 
 Sometimes, we will want to select particular elements from a Series.
 
-We can do this using `.loc[index_items]`; where `index_items` is
+We can do this using `.loc[index_items]`, where `index_items` is
 an item from the index, or a list of items in the index.
 
 We will see this more in-depth in a coming lecture, but for now, we
@@ -157,15 +157,15 @@ See exercise 1 in the {ref}`exercise list <pd-int-ex>`.
 
 A DataFrame is how pandas stores one or more columns of data.
 
-We can think a DataFrames a multiple Series stacked side by side as
+We can think of a DataFrames as multiple Series stacked side by side as
 columns.
 
 This is similar to a sheet in an Excel workbook or a table in a SQL
 database.
 
-In addition to row labels (an index), DataFrames also have column labels.
+In addition to row labels (an index), a DataFrame also has column labels.
 
-We refer to these column labels as the columns or column names.
+We refer to these column labels as the *columns* or *column names*.
 
 ```{figure} ../_static/PandasDataFrame.png
 :alt: PandasDataFrame.png
@@ -188,7 +188,7 @@ unemp_region
 ```
 
 We can retrieve the index and the DataFrame values as we
-did with a Series.
+did with the Series.
 
 ```{code-cell} python
 unemp_region.index
@@ -215,7 +215,7 @@ unemp_region.head()
 unemp_region.tail(3)
 ```
 
-#### Plotting
+#### Basic Plotting
 
 We can generate plots with the `.plot` method.
 
@@ -255,7 +255,7 @@ unemp_region["MidWest"]
 
 ### Computations with Columns
 
-pandas can do various computations and mathematical operations on
+Pandas can do various computations and mathematical operations on
 columns.
 
 Let's take a look at a few of them.
@@ -497,7 +497,7 @@ For each of the following, we recommend reading the documentation for help.
   all of the column names in `unemp_region`.
 - Using the `plot` method, make a bar plot. What does it look like
   now?
-- Use `.loc` to select the the unemployment data for the
+- Use `.loc` to select the unemployment data for the
   `NorthEast` and `West` for the years 1995, 2005, 2011, and 2015.
 - Run the code `unemp_region.dtypes` below. What does it give you?
   How does this compare with `unemp.dtype`?
