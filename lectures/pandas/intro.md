@@ -57,7 +57,7 @@ pd.__version__
 
 The first main pandas type we will introduce is called Series.
 
-A Series is a single column of data, with row labels for each
+A Series is a single column of data with row labels for each
 observation.
 
 Pandas refers to the row labels as the *index* of the Series.
@@ -157,7 +157,7 @@ See exercise 1 in the {ref}`exercise list <pd-int-ex>`.
 
 A DataFrame is how pandas stores one or more columns of data.
 
-We can think of a DataFrames as multiple Series stacked side by side as
+We can think of a DataFrame as multiple Series stacked side by side as
 columns.
 
 This is similar to a sheet in an Excel workbook or a table in a SQL
